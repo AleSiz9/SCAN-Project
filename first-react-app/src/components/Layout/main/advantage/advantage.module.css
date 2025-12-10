@@ -1,0 +1,49 @@
+.scrool {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 70px;
+}
+
+.button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+.cardsContainer {
+	display: flex;
+	gap: 30px;
+	width: 100%;
+	max-width: 1400px;
+	justify-content: center;
+}
+
+.cards__content{
+	padding: 30px 10px 30px 20px;
+	display: flex;
+    flex-direction: column;
+    gap: 19px;
+	margin-bottom: auto;
+}
+
+.cards {
+	border-radius: 10px;
+	box-shadow: var(--box-shadow);
+	width: 400px;
+	text-align: start;
+}
+
+.img {
+	margin-bottom: 90px;
+}
+
+@media screen and (max-width: 440px) {
+	.scrool {
+		flex-direction: row;
+		width: 90%;
+		margin: auto;
+	}
+}

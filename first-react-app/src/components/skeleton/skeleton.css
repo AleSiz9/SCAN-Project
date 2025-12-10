@@ -1,0 +1,116 @@
+.layout-skeleton{
+  width: 80%;
+}
+
+.page-skeleton {
+  padding: 20px;
+}
+
+.skeleton-header {
+  height: 60px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.skeleton-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-line {
+  height: 20px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 4px;
+}
+
+.skeleton-line--short {
+  width: 60%;
+}
+
+/* Форма скелетон */
+.form-skeleton {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skeleton-field {
+  height: 50px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+}
+
+.skeleton-button {
+  height: 50px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Поиск скелетон */
+.search-skeleton {
+  padding: 20px;
+}
+
+.skeleton-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.skeleton-filter {
+  height: 40px;
+  width: 120px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 6px;
+}
+
+.skeleton-results {
+  display: grid;
+  gap: 16px;
+}
+
+.skeleton-card {
+  height: 120px;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 8px;
+}
+
+/* Анимация */
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .skeleton-filters {
+    flex-direction: column;
+  }
+  
+  .skeleton-filter {
+    width: 100%;
+  }
+}

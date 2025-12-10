@@ -1,0 +1,32 @@
+@import url(../advantage/advantage.module.css);
+@import url(../../../skeleton/skeleton.css);
+@import url(../../footer/footer.module.css);
+@import url(../pricingPlans/plans.css);
+@import url(../requstData/requestData.module.css);
+@import url(../../header/header.module.css);
+@import url(../../LoginPage/login.module.css);
+@import url(../searchPage//search.module.css);
+@import url(../resultPage/searchResult.module.css);
+
+:root {
+  --white-color: rgba(255, 255, 255, 1);
+  --button-color: rgba(89, 112, 255, 1);
+  --card-color1: rgba(255, 182, 79, 1);
+  --card-color2: rgba(124, 227, 225, 1);
+  --red-color: rgba(255, 89, 89, 1);
+  --black-color: rgba(0, 0, 0, 1);
+  --footer-color: rgba(2, 148, 145, 1);
+  --card-title-size: 30px;
+  --card-subtitle-size: 18px;
+  --card-button-size: 20px;
+  --strikethrough: 25px;
+  --strikethrough-color: rgba(0, 0, 0, 0.5);
+  --box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+  --login-border: solid 1px rgba(199, 199, 199, 1);
+  --icon-border: solid 1px rgba(89, 112, 255, 0.51);
+  --error: 1px solid rgba(255, 89, 89, 1);
+  --login-title: rgba(148, 148, 148, 1);
+  --login-signup: rgba(199, 199, 199, 1);
+  --border-radius5: 5px;
+  --border-radius10: 10px
+}

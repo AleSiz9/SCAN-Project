@@ -1,0 +1,238 @@
+.content-pricing-section {
+  padding-bottom: 118px;
+}
+
+.content-pricing-plans {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 70px 0;
+}
+
+.plans-card__li-beginner,
+.plans-card__li-pro,
+.plans-card__li-business {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  width: 100%;
+  overflow: hidden;
+  margin: 2px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateY(0);
+}
+
+.plans-card__li-beginner:hover,
+.plans-card__li-pro:hover,
+.plans-card__li-business:hover {
+  transform: translateY(-8px);
+  margin: 0;
+}
+
+.plans-card__li-beginner:hover {
+  border: solid 2px var(--card-color1);
+}
+
+.plans-card__li-pro:hover {
+  border: solid 2px var(--card-color2);
+}
+
+.plans-card__li-business:hover {
+  border: solid 2px var(--black-color);
+}
+
+.card-li {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  height: 132px;
+  position: relative;
+}
+
+.header-beginner__color {
+  background: var(--card-color1);
+}
+
+.header-pro__color {
+  background: var(--card-color2)
+}
+
+.header-business__color {
+  background: var(--black-color);
+}
+
+.card-title-beginner,
+.card-title-pro,
+.card-title-business {
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title-beginner,
+.title-pro,
+.title-business,
+.price-section-rate {
+  font-size: var(--card-title-size);
+  font-weight: 500;
+}
+
+.subtitle-beginner,
+.subtitle-pro,
+.subtitle-business,
+.price-section-credit {
+  font-size: var(--card-subtitle-size);
+}
+
+.subtitle-business {
+  color: var(--white-color);
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  border-radius: 10px 10px 0 0;
+  height: 70px;
+}
+
+.title-business {
+  color: rgb(255, 255, 255);
+}
+
+.card-img-beginner {
+  position: absolute;
+  right: 7px;
+  top: 5px;
+}
+
+.card-img-pro {
+  position: absolute;
+  right: 0;
+}
+
+.card-img-business {
+  position: absolute;
+  right: 15px;
+}
+
+.plans-content {
+  padding: 40px 30px;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 33px 15px 0 30px;
+  text-align: start;
+}
+
+.price-section-rate {
+  display: flex;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  font-size: var(--strikethrough);
+  color: var(--strikethrough-color);
+  padding-left: 20px;
+  margin-top: 2px;
+}
+
+.tariff-service li::before {
+  content: '';
+  display: block;
+  background-image: url(/public/images/imgForm/check-mark.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 17px;
+  height: 13px;
+  position: relative;
+  top: 15px;
+  right: 20px;
+}
+
+.plans-detail {
+  background: var(--button-color);
+  display: flex;
+  height: 59px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--white-color);
+  margin: 0 30px 24px 30px;
+}
+
+.active{
+  background: rgba(210, 210, 210, 1);
+  color: var(--black-color);
+}
+
+.plans__active-indicator{
+  display: flex;
+  align-items: center;
+  background: rgba(59, 165, 224, 1);
+  border-radius: 10px;
+  max-width: 134px;
+  margin: 12px 10px;
+  color: var(--white-color);
+  height: 24px;
+  position: absolute;
+  right: 0;
+  font-size: 14px;
+}
+
+.plans__active-indicator p {
+  padding: 5px;
+}
+
+.service-section-beginner,
+.service-section-pro {
+  padding: 59px 34px 55px 30px;
+  text-align: start;
+}
+
+.service-section-business {
+  padding: 94px 34px 55px 30px;
+  text-align: start;
+}
+
+.tariff-service {
+  padding-left: 20px;
+  text-align: start;
+}
+
+.tariff-service li {
+  list-style-type: none;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .content-pricing-plans {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title-beginner{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .card-img-beginner img{
+    width: 59px;
+  }
+  .card-img-pro img{
+    width: 83px;
+  }
+  .card-img-business img{
+    width: 73px;
+  }
+  .card-img-business{
+    top: 5px;
+  }
+}

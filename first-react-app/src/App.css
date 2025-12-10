@@ -1,0 +1,85 @@
+@import url(./components/Layout/main/style/style.css);
+
+@font-face {
+  font-family: "Ferry";
+  src:
+    local("Ferry"),
+    url("/font/Ferry-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src:
+    local("Inter-Regular"),
+    url("/font/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter-Medium";
+  src:
+    local("Inter-Medium"),
+    url("/font/Inter-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Inter-Regular', sans-serif;
+  box-sizing: content-box;
+}
+
+main,
+header {
+  font-family: 'Inter-Regular', sans-serif;
+  margin: 0 60px;
+  position: relative;
+  text-align: center;
+  max-width: 1440px;
+}
+
+
+a {
+  text-decoration: none;
+  color: var(--black-color);
+  font-size: 14px;
+}
+
+h1 {
+  font-family: 'Ferry', sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 45px;
+  text-align: start;
+  font-family: 'Ferry', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 440px) {
+
+  main,
+  header {
+    margin: 0 26px 0 14px;
+  }
+
+}
+
+@media screen and (min-width: 1490px) {
+  header,
+  main {
+    margin: 0 auto;
+  }
+}

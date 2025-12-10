@@ -1,0 +1,38 @@
+.footer {
+  background: var(--footer-color);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 45px 0 60px;
+  padding: 25px 0;
+}
+
+.info {
+  color: rgb(240, 248, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+address {
+  font-style: normal;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 5px;
+}
+
+address a {
+  color: aliceblue;
+}
+
+@media screen and (max-width: 530px) {
+  .footer__content {
+    padding: 20px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,285 @@
+.searchResults {
+  max-width: 1440px;
+  margin: 0 60px 109px;
+}
+
+.searchResults__documents {
+  margin-top: 30px;
+}
+
+.searchResults__histogram {
+  margin-bottom: 30px;
+}
+
+.histogram {
+  margin-bottom: 20px;
+}
+
+.histogram__title {
+  margin-bottom: 17px;
+  font-size: var(--card-title-size);
+  font-family: 'Ferry', sans-serif;
+}
+
+.histogram p {
+  color: var(--login-title);
+}
+
+.histogram__count {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.histogram__navBtn {
+  background: none;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.histogram__container {
+  display: flex;
+  flex-direction: row;
+  max-width: 94%;
+  border: solid 2px var(--footer-color);
+  border-radius: var(--border-radius10);
+  background: var(--footer-color);
+  overflow: hidden;
+}
+
+.histogram__tableTitle {
+  text-align: center;
+}
+
+.histogram__titleRow {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  padding: 19px 30px;
+  text-align: start;
+}
+
+.histogram__periodHeader,
+.histogram__rowLabel,
+.histogram__rowLabelRisk {
+  color: var(--white-color);
+  font-weight: 500;
+}
+
+.histogram__table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--white-color);
+}
+
+.histogram__scrollContainer {
+  display: flex;
+  text-align: center;
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+
+.histogram__scrollItem {
+  display: flex;
+  border-right-color: var(--login-title);
+  border-right-style: solid;
+  border-right-width: 2px;
+  padding: 0 20px;
+}
+
+.histogram__text{
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  gap: 27px;
+  font-size: var(--card-subtitle-size);
+}
+
+.histogram__dateHeader {
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.title {
+  font-family: 'Ferry', sans-serif;
+  margin-bottom: 58px;
+  color: var(--black-color);
+  font-size: var(--card-title-size);
+}
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 38px;
+}
+
+.documentCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: var(--border-radius10);
+  padding: 19px 30px 35px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  line-height: 1;
+}
+
+.documentCard__meta {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 16px;
+  color: var(--login-title);
+}
+
+.documentCard__meta a {
+  text-decoration: underline;
+  color: var(--login-title);
+  font-size: 16px;
+}
+
+.documentCard__header {
+  text-align: start;
+  margin: 0;
+}
+
+.documentCard__image {
+  margin: 16px 0;
+  text-align: center;
+}
+
+.documentCard__img {
+  max-width: 100%;
+  max-height: 160px;
+  border-radius: 6px;
+}
+
+.documentCard__title {
+  font-weight: 500;
+  font-size: 26px;
+}
+
+.documentCard__content {
+  margin: 16px 0;
+}
+
+.documentCard__summary {
+  color: var(--strikethrough-color);
+  word-break: break-all;
+}
+
+.documentCard__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.documentCard__link {
+  padding: 15px 47px;
+  background: var(--card-color2);
+  border-radius: 5px;
+}
+
+.documentCard__wordCount {
+  display: flex;
+  justify-content: center;
+  margin-top: 38px;
+  color: var(--login-title);
+}
+
+.loadMore {
+  text-align: center;
+  margin-top: 38px;
+}
+
+.loadMoreBtn {
+  background: var(--button-color);
+  color: var(--white-color);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.empty {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+  .searchResults {
+    margin: 15px;
+  }
+
+  .list {
+    gap: 16px;
+    grid-template-columns: auto;
+  }
+
+  .documentCard {
+    padding: 16px;
+  }
+
+  .documentCard__meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .documentCard__footer {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .documentCard__title{
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .histogram__container {
+    flex-direction: column;
+    max-width: 84%;
+  }
+
+  .histogram__tableTitle {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .histogram__scrollContainer {
+    scroll-snap-type: x mandatory;
+  }
+
+  .histogram__scrollItem {
+    scroll-snap-stop: always;
+    padding: 0;
+    gap: 50px;
+    min-width: 69vw;
+    scroll-snap-align: start;
+    border: none;
+  }
+
+  .histogram__titleRow {
+    flex-direction: row;
+    justify-content: center;
+    padding: 23px 0;
+  }
+  .histogram__text{
+    flex-direction: row;
+    gap: 50px;
+    padding: 18px 0 26px 0;
+  }
+}

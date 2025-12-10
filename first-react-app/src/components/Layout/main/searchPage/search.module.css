@@ -1,0 +1,356 @@
+.dataSearch {
+  text-align: justify;
+}
+
+.dataSearch__title {
+  margin: 24px 0 47px;
+  max-width: 610px;
+  line-height: 1;
+}
+
+.dataSearch__title p {
+  padding-top: 25px;
+  font-size: 20px;
+}
+
+.titleImg img {
+  display: none;
+}
+
+.dataSearch__content {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 70px;
+}
+
+.contentImg__search {
+  position: relative;
+  flex: 0 1 auto;
+  width: 100%;
+  max-width: 600px;
+  min-height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.searchFile {
+  position: absolute;
+  width: 20%;
+  max-width: 91px;
+  min-width: 81px;
+  top: -25%;
+  left: -6%;
+  z-index: 1;
+}
+
+.searchFolder {
+  position: absolute;
+  width: 18%;
+  max-width: 130px;
+  min-width: 90px;
+  top: -20%;
+  left: 45%;
+  z-index: 2;
+}
+
+.searchPhoto {
+  position: relative;
+  width: 60%;
+  min-width: 350px;
+  height: 84%;
+  width: 83%;
+  z-index: 3;
+}
+
+.dataSearch__formGroup {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 18px;
+  grid-template-areas:
+    "form Check"
+    "form Btn";
+}
+
+.formCheckboxGroup {
+  grid-area: Check;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 10px;
+  width: 407px;
+}
+
+.formCheckboxGroup label {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.formCheckboxGroup div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 17px;
+}
+
+.formCheckboxGroup div:last-child button {
+  width: 100%;
+  max-width: 305px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formCheckboxGroup div:last-child p {
+  font-size: 14px;
+}
+
+.formHint {
+  grid-area: Btn;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: auto;
+  align-items: flex-start;
+  margin-left: auto;
+  gap: 10px;
+}
+
+.formHint p {
+  font-size: 14px;
+  color: var(--login-title);
+  margin-right: auto;
+}
+
+.formInputGroup {
+  display: grid;
+  grid-area: form;
+  grid-template-columns: repeat(2, 190px);
+  grid-template-rows: repeat(4, auto) 1fr;
+  margin-right: 11px;
+  grid-template-areas:
+    "Inn Inn "
+    "Ton Ton "
+    "Num Num "
+    "Start End "
+    "err err";
+  gap: 20px;
+}
+
+.formInputGroup__gridInn {
+  grid-area: Inn;
+}
+
+.formInputGroup__gridTon {
+  grid-area: Ton;
+}
+
+.formInputGroup__gridNumDocs {
+  grid-area: Num;
+}
+
+.formInputGroup__gridStartDate {
+  grid-area: Start;
+}
+
+.formInputGroup__gridStartDate label {
+  width: 176px;
+}
+
+.formInputGroup__gridEndDate {
+  grid-area: End;
+  margin-top: 22px;
+}
+
+.formInputGroup__gridEndDate label {
+  margin-top: 60px;
+}
+
+.formGroup_errors {
+  grid-area: err;
+}
+
+.formInputGroup p label {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+  max-width: 242px;
+}
+
+.formInputGroup p:last-child label {
+  margin-top: 40px;
+  max-width: 176px;
+}
+
+input[type="checkbox"i] {
+  width: 20px;
+  height: 20px;
+}
+
+.formInputGroup__field {
+  font-size: 14px;
+  width: 100%;
+  padding: 13px 0;
+  border-radius: 5px;
+  border: var(--login-border);
+  text-align: center;
+}
+
+
+.formInputGroup__field.error {
+  border: var(--error);
+  transition: all 0.3s ease;
+}
+
+.formGroup_errors {
+  display: flex;
+  max-width: 300px;
+  font-size: 14px;
+}
+
+.error-message {
+  color: var(--red-color);
+  font-size: 14px;
+}
+
+.data-search__form-input-data {
+  display: flex;
+}
+
+.form-input-data p label {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.form-input-data p:last-child {
+  display: flex;
+}
+
+.searchResults__loading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchResults__loadingText {
+  margin-left: auto;
+}
+
+@media (max-width: 1190px) {
+  .dataSearch__content {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .contentImg__search {
+    min-height: 350px;
+    left: 170px;
+    top: 50px;
+  }
+
+  .searchPhoto {
+    width: 50%;
+  }
+}
+
+@media (max-width: 900px) {
+  .dataSearch__formGroup {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+      "form"
+      "Check"
+      "Btn";
+    gap: 30px;
+  }
+
+  .contentImg__search {
+    left: 60px;
+  }
+
+  .formHint {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .dataSearch__content {
+    gap: 40px;
+  }
+
+  .contentImg__search {
+    min-height: 300px;
+    max-width: 400px;
+    left: 60px;
+  }
+
+  .searchFolder,
+  .searchFile {
+    display: none;
+  }
+
+  .searchPhoto {
+    width: 70%;
+  }
+
+  .formInputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dataSearch__formGroup {
+    grid-template-areas:
+      "form"
+      "Btn";
+  }
+
+  .dataSearch__title h1 {
+    font-size: 28px;
+  }
+
+  .dataSearch__title p {
+    font-size: 18px;
+  }
+
+  .titleImg {
+    display: flex;
+    gap: 30px;
+  }
+
+  .titleImg img {
+    display: block;
+    width: 58px;
+  }
+
+  .contentImg__search {
+    min-height: 250px;
+    left: 20px;
+  }
+
+  .searchPhoto {
+    width: 80%;
+  }
+
+  .formInputGroup__gridEndDate {
+    margin: 0;
+  }
+
+  .formInputGroup label {
+    min-width: 270px;
+  }
+
+  .formCheckboxGroup {
+    display: none;
+  }
+}
